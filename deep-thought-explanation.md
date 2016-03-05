@@ -52,9 +52,13 @@ From this, you had your console displaying `42`.
 
 So I decided to play on a little ES6 fat arrow notation. Also reduced variables to `$` and `_` variables, to develop a rather non-alphanumeric answer:
 
-  (_=_=>((_<<-~-~[])|-~[]))(_(-~[]))<<-~[]
+`(_=_=>((_<<-~-~[])|-~[]))(_(-~[]))<<-~[]`
   
 So the first encapsulation `(_=_=>((_<<-~-~[])|-~[]))` is the definition of the `_` function, but because we're encapsulating it, we're then using it to apply it to another instance of the function... essentially doing `_(_(1))<<1`.
 
+Guess what now? We have a similar situation with the second part... 
 
+`($=$=>$<<-~-~-~[]|-~[])((_=_=>_<<-~[]|-~[])(_(_(_($($($(-~[]))))))))^-~[]`
+
+A bit of a headache, but let's go through this quickly...
   
