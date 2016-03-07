@@ -29,7 +29,7 @@ The resulting `OR` gives us `5`
 
 3) Next we repeat steps 1 and 2 once again... First step results in `10100` which gives us `16 + 4 = 20`. Applying a bitwise `or` results in the `20` getting a +1, which makes it `21` (`10101`).
 
-4) We then do another left-handed shift of bits, but this time only by one bit... making `101010`, which is equivalent to `42`.
+4) We then do another left-handed shift of bits, but this time only by one bit... making `101010`, which is the binary equivalent to the decimal number `42`.
 
 *So now that we have the `42` established, how did the fancy code work out that way?*
 
@@ -62,3 +62,9 @@ Guess what now? We have a similar situation with the second part...
 
 A bit of a headache, but let's go through this quickly...
   
+`($=$=>$<<-~-~-~[]|-~[])` by extrapolation of our previous encounter to a similar ES6 fat arrow notation function, is a function that does a three to the left bitwise shift, (multiplies an integer by 8), and then adds 1 with the bitwise `or`.
+
+Please note: `|1` works as addition in this instance because we've shifted enough bits to the left to allow the bitwise `or` to `add` 1 to the final bit without complication.
+
+Next part (to be explained shortly)
+
